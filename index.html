@@ -1,57 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LBM Investay Holdings</title>
+  <title>LBM Investay Holdings | CV Writing & Business Support</title>
+
+  <meta name="description" content="LBM Investay Holdings offers CV writing, admin services, bookkeeping and business support in South Africa. Fast and affordable services.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: #ffffff;
+      background: #0b0b0b;
+      color: white;
     }
 
     header {
-      background: #000;
-      padding: 30px;
       text-align: center;
+      padding: 60px 20px;
+      background: #111;
       border-bottom: 2px solid silver;
     }
 
     h1 {
       margin: 0;
-      font-size: 28px;
       color: silver;
+      font-size: 36px;
     }
 
     .tagline {
-      font-size: 14px;
       color: #ccc;
       margin-top: 10px;
     }
 
-    section {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .card {
-      background: #1a1a1a;
-      padding: 15px;
-      margin: 10px 0;
-      border-left: 3px solid silver;
-    }
-
     .btn {
       display: inline-block;
-      padding: 10px 15px;
-      margin-top: 10px;
+      margin-top: 12px;
+      padding: 12px 18px;
       background: silver;
       color: black;
       text-decoration: none;
       font-weight: bold;
+      border-radius: 6px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: #161616;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 4px solid silver;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: silver;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .price {
+      color: #00ff99;
+      font-weight: bold;
+    }
+
+    .testimonial {
+      background: #1a1a1a;
+      padding: 10px;
+      margin-top: 10px;
       border-radius: 5px;
+      font-style: italic;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 12px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     footer {
@@ -69,42 +105,99 @@
 <header>
   <h1>LBM Investay Holdings</h1>
   <div class="tagline">Driven by Growth. Built on Trust.</div>
+
+  <a class="btn" href="https://wa.me/27834537779?text=Hi%20I%20want%20a%20CV%20service">Order on WhatsApp</a>
 </header>
 
 <section>
 
+  <!-- SERVICES -->
   <div class="card">
-    <h2>About Us</h2>
-    <p>LBM Investay Holdings is a multi-service business focused on investments, rentals, retail, and professional support services in South Africa.</p>
-  </div>
+    <h2>💼 Our Services</h2>
 
-  <div class="card">
-    <h2>Our Services</h2>
+    <h3>📄 Admin & Document Services</h3>
     <ul>
-      <li>Document Preparation & CV Writing</li>
-      <li>Business Support Services</li>
-      <li>Computer Literacy Training</li>
-      <li>Background Checks (Coming Soon)</li>
-      <li>LBM Connect WiFi (Coming Soon)</li>
+      <li>CV Writing <span class="price">(from R20)</span></li>
+      <li>Job Applications Assistance</li>
+      <li>Business Profiles</li>
+      <li>Letter Typing</li>
+      <li>Online Forms</li>
+    </ul>
+
+    <h3>💼 Bookkeeping Services</h3>
+    <ul>
+      <li>Invoice Creation</li>
+      <li>Expense Tracking</li>
+      <li>Basic Business Records</li>
+    </ul>
+
+    <h3>👥 HR Services</h3>
+    <ul>
+      <li>CV Screening</li>
+      <li>Employee Records Setup</li>
     </ul>
   </div>
 
+  <!-- PAYFAST -->
   <div class="card">
-    <h2>Contact</h2>
-    <p>Phone: 083 453 7779</p>
-    <p>Email: info@lbminvestay.co.za</p>
-    <p>Address: 1181 Ndaba Street, Phola, Ogies</p>
+    <h2>💳 Pay Online (Secure Payment)</h2>
+    <p>Pay for your selected service instantly.</p>
 
-    <a class="btn" href="https://wa.me/27834537779">WhatsApp Us</a>
+    <a class="btn" href="https://www.payfast.co.za/eng/process?cmd=_paynow&receiver=YOUR_PAYFAST_ID&item_name=CV_Service&amount=50">
+      Pay CV Service (R50)
+    </a>
+
+    <p style="font-size:12px; color:#aaa;">
+      Replace YOUR_PAYFAST_ID with your PayFast merchant ID when ready.
+    </p>
   </div>
 
+  <!-- TESTIMONIALS -->
   <div class="card">
-    <h2>Get Started</h2>
-    <p>Need help with documents or business services? Contact us today.</p>
-    <a class="btn" href="mailto:info@lbminvestay.co.za">Email Us</a>
+    <h2>⭐ Testimonials</h2>
+
+    <div class="testimonial">
+      "Fast CV service, very professional!" – Client A
+    </div>
+
+    <div class="testimonial">
+      "Got job applications done quickly and correctly." – Client B
+    </div>
+  </div>
+
+  <!-- LEAD FORM -->
+  <div class="card">
+    <h2>📩 Request a Service</h2>
+
+    <form>
+      <input type="text" placeholder="Your Name" required><br><br>
+      <input type="text" placeholder="Service Needed" required><br><br>
+      <input type="tel" placeholder="Phone Number" required><br><br>
+      <textarea placeholder="Message" rows="4"></textarea><br><br>
+      <button class="btn" type="submit">Send Request</button>
+    </form>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div class="card">
+    <h2>📊 Track Your Request</h2>
+    <p>We manually track all client requests for fast service delivery.</p>
+
+    <a class="btn" href="https://sheets.google.com" target="_blank">
+      View Admin Dashboard (Internal)
+    </a>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="card">
+    <h2>📞 Contact</h2>
+    <p>Phone: 083 453 7779</p>
+    <p>Email: info@lbminvestay.co.za</p>
   </div>
 
 </section>
+
+<a class="whatsapp" href="https://wa.me/27834537779">WhatsApp</a>
 
 <footer>
   © 2026 LBM Investay Holdings | All Rights Reserved
