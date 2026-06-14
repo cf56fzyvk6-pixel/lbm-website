@@ -3,7 +3,7 @@
 <head>
   <title>LBM Investay Holdings</title>
 
-  <meta name="description" content="LBM Investay Holdings offers CV writing, NSFAS help, admin services, bookkeeping and business support in South Africa.">
+  <meta name="description" content="LBM Investay Holdings offers CV writing, NSFAS help, admin services, WiFi, vouchers, airtime and more in South Africa.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -63,6 +63,14 @@
 
     .price { color: green; font-weight: bold; }
 
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
     .whatsapp {
       position: fixed;
       bottom: 20px;
@@ -73,14 +81,6 @@
       border-radius: 50px;
       text-decoration: none;
       font-weight: bold;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 5px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
     }
   </style>
 </head>
@@ -98,44 +98,51 @@
 
 <section>
 
-  <!-- SERVICES -->
+  <!-- CORE SERVICES -->
   <div class="card">
     <h2>💼 Admin & Document Services</h2>
-    <ul>
-      <li>CV Writing & Job Applications <span class="price">(from R20)</span></li>
-      <li>Letter Typing & General Admin</li>
-      <li>Printing, Scanning & Copies</li>
-      <li>Email Setup & Online Forms</li>
-    </ul>
+    <p>CV Writing from R20 • Job Applications • Letters • Printing</p>
   </div>
 
   <div class="card">
     <h2>🎓 Education & Applications</h2>
-    <ul>
-      <li>University Applications</li>
-      <li>NSFAS Applications</li>
-      <li>Assignments Formatting</li>
-      <li>RES Accommodation Applications</li>
-    </ul>
+    <p>NSFAS • University Applications • Assignments • RES Support</p>
   </div>
 
   <div class="card">
     <h2>🏛️ Government Applications</h2>
-    <ul>
-      <li>UIF Applications</li>
-      <li>SASSA Grants Support</li>
-      <li>Government Forms Assistance</li>
-    </ul>
+    <p>UIF • SASSA • Online Forms Assistance</p>
   </div>
 
   <div class="card">
     <h2>💼 Business Support</h2>
-    <ul>
-      <li>Basic Bookkeeping</li>
-      <li>Invoices</li>
-      <li>HR Admin Support</li>
-      <li>CV Screening</li>
-    </ul>
+    <p>Bookkeeping • Invoices • HR Admin • CV Screening</p>
+  </div>
+
+  <!-- EXTRA SERVICES -->
+  <div class="card">
+    <h2>📡 LBM WiFi & Data Packages</h2>
+    <p>WiFi installation and affordable monthly data packages available.</p>
+  </div>
+
+  <div class="card">
+    <h2>🎫 Betway Vouchers</h2>
+    <p>Betway voucher assistance available.</p>
+  </div>
+
+  <div class="card">
+    <h2>📱 Airtime & Data</h2>
+    <p>Airtime and mobile data vouchers available for all networks.</p>
+  </div>
+
+  <div class="card">
+    <h2>⚡ Electricity Vouchers</h2>
+    <p>Prepaid electricity top-ups available.</p>
+  </div>
+
+  <div class="card">
+    <h2>🔍 Criminal Background Checks</h2>
+    <p>Criminal record check services available on request.</p>
   </div>
 
   <!-- PAYFAST -->
@@ -155,9 +162,9 @@
     </a>
   </div>
 
-  <!-- FORM -->
+  <!-- WHATSAPP FORM -->
   <div class="card">
-    <h2>📩 Request Service (WhatsApp)</h2>
+    <h2>📩 Request Service</h2>
 
     <form onsubmit="sendToWhatsApp(); return false;">
       <input id="name" type="text" placeholder="Your Name" required>
@@ -169,6 +176,7 @@
     </form>
   </div>
 
+  <!-- CONTACT -->
   <div class="card">
     <h2>📞 Contact</h2>
     <p>Phone: 083 453 7779</p>
@@ -179,7 +187,7 @@
 
 <a class="whatsapp" href="https://wa.me/27834537779">WhatsApp</a>
 
-<footer>
+<footer style="text-align:center; padding:20px; font-size:12px; color:#777;">
   © 2026 LBM Investay Holdings | All Rights Reserved
 </footer>
 
