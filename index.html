@@ -3,7 +3,7 @@
 <head>
   <title>LBM Investay Holdings</title>
 
-  <meta name="description" content="LBM Investay Holdings offers CV writing, admin services, applications assistance, bookkeeping, HR support and business services in South Africa.">
+  <meta name="description" content="LBM Investay Holdings offers CV writing, NSFAS help, admin services, bookkeeping and business support in South Africa.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -23,7 +23,6 @@
 
     h1 {
       margin: 0;
-      color: #111;
       font-size: 36px;
     }
 
@@ -41,6 +40,7 @@
       text-decoration: none;
       font-weight: bold;
       border-radius: 6px;
+      cursor: pointer;
     }
 
     section {
@@ -57,18 +57,11 @@
       border-radius: 8px;
     }
 
-    h2 {
-      color: #111;
-    }
+    h2 { color: #111; }
 
-    ul {
-      padding-left: 20px;
-    }
+    ul { padding-left: 20px; }
 
-    .price {
-      color: green;
-      font-weight: bold;
-    }
+    .price { color: green; font-weight: bold; }
 
     .whatsapp {
       position: fixed;
@@ -82,12 +75,12 @@
       font-weight: bold;
     }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 12px;
-      color: #777;
-      border-top: 1px solid #ddd;
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
     }
   </style>
 </head>
@@ -105,23 +98,22 @@
 
 <section>
 
+  <!-- SERVICES -->
   <div class="card">
     <h2>💼 Admin & Document Services</h2>
     <ul>
       <li>CV Writing & Job Applications <span class="price">(from R20)</span></li>
       <li>Letter Typing & General Admin</li>
-      <li>Company Profiles & Business Proposals</li>
       <li>Printing, Scanning & Copies</li>
-      <li>Email Setup & Emailing Services</li>
-      <li>Online Form Filling & Applications</li>
+      <li>Email Setup & Online Forms</li>
     </ul>
   </div>
 
   <div class="card">
     <h2>🎓 Education & Applications</h2>
     <ul>
-      <li>University Applications Assistance</li>
-      <li>NSFAS Application Support</li>
+      <li>University Applications</li>
+      <li>NSFAS Applications</li>
       <li>Assignments Formatting</li>
       <li>RES Accommodation Applications</li>
     </ul>
@@ -130,28 +122,28 @@
   <div class="card">
     <h2>🏛️ Government Applications</h2>
     <ul>
-      <li>UIF Application Assistance</li>
-      <li>SASSA Grant Application Support</li>
-      <li>Online Form Filling</li>
+      <li>UIF Applications</li>
+      <li>SASSA Grants Support</li>
+      <li>Government Forms Assistance</li>
     </ul>
   </div>
 
   <div class="card">
     <h2>💼 Business Support</h2>
     <ul>
-      <li>Bookkeeping (Basic)</li>
-      <li>Invoice Preparation</li>
-      <li>Appointment Assistance</li>
+      <li>Basic Bookkeeping</li>
+      <li>Invoices</li>
       <li>HR Admin Support</li>
       <li>CV Screening</li>
     </ul>
   </div>
 
+  <!-- PAYFAST -->
   <div class="card">
     <h2>💳 Pay Online</h2>
 
     <a class="btn"
-    href="https://www.payfast.co.za/eng/process?cmd=_paynow&receiver=34842225&item_name=CV_Writing_Service&amount=20">
+    href="https://www.payfast.co.za/eng/process?cmd=_paynow&receiver=34842225&item_name=CV_Service&amount=20">
       Pay CV Service (R20)
     </a>
 
@@ -161,13 +153,20 @@
     href="https://www.payfast.co.za/eng/process?cmd=_paynow&receiver=34842225&item_name=Admin_Service&amount=50">
       Pay Admin Service (R50)
     </a>
+  </div>
 
-    <br><br>
+  <!-- FORM -->
+  <div class="card">
+    <h2>📩 Request Service (WhatsApp)</h2>
 
-    <a class="btn"
-    href="https://www.payfast.co.za/eng/process?cmd=_paynow&receiver=34842225&item_name=Business_Documents&amount=100">
-      Pay Business Documents (R100)
-    </a>
+    <form onsubmit="sendToWhatsApp(); return false;">
+      <input id="name" type="text" placeholder="Your Name" required>
+      <input id="service" type="text" placeholder="Service Needed" required>
+      <input id="phone" type="text" placeholder="Your Phone Number" required>
+      <textarea id="message" placeholder="Your Message"></textarea>
+
+      <button class="btn" type="submit">Send on WhatsApp</button>
+    </form>
   </div>
 
   <div class="card">
@@ -183,6 +182,24 @@
 <footer>
   © 2026 LBM Investay Holdings | All Rights Reserved
 </footer>
+
+<script>
+function sendToWhatsApp() {
+  var name = document.getElementById("name").value;
+  var service = document.getElementById("service").value;
+  var phone = document.getElementById("phone").value;
+  var message = document.getElementById("message").value;
+
+  var url = "https://wa.me/27834537779?text="
+  + "Hello LBM,%0A"
+  + "Name: " + name + "%0A"
+  + "Service: " + service + "%0A"
+  + "Phone: " + phone + "%0A"
+  + "Message: " + message;
+
+  window.open(url, "_blank");
+}
+</script>
 
 </body>
 </html>
