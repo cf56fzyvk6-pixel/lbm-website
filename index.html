@@ -3,82 +3,143 @@
 
 <head>
 <meta charset="UTF-8">
-
-<title>LBM Investay Holdings | Admin, Business & Digital Services</title>
-
-<meta name="description" content="LBM Investay Holdings offers admin services, student support, document preparation, application assistance, marketing services, WiFi, vouchers, airtime, and electricity services in South Africa. Driven by Growth. Built on Trust.">
-
+<title>LBM Investay Holdings</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- GOOGLE VERIFICATION (PASTE YOUR CODE BELOW) -->
-<meta name="google-site-verification" content="PASTE_YOUR_GOOGLE_CODE_HERE" />
-
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #ffffff;
-  color: #111;
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f4f6f8;
+color:#111;
 }
 
-header {
-  text-align: center;
-  padding: 60px 20px;
-  background: #f5f5f5;
-  border-bottom: 2px solid #ddd;
+header{
+background:linear-gradient(135deg,#111,#2b2b2b);
+color:#fff;
+text-align:center;
+padding:80px 20px;
 }
 
-h1 { margin: 0; font-size: 36px; }
-
-.tagline { color: #555; margin-top: 10px; }
-
-.btn {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 12px 18px;
-  background: #111;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 6px;
+header h1{
+margin:0;
+font-size:42px;
 }
 
-section {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
+header p{
+color:#ccc;
+margin-top:10px;
 }
 
-.card {
-  background: #f9f9f9;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-left: 4px solid #111;
-  border-radius: 8px;
+nav{
+position:sticky;
+top:0;
+background:#fff;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+padding:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
-h2 { color: #111; }
-
-ul { padding-left: 20px; }
-
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+nav a{
+margin:5px 12px;
+text-decoration:none;
+color:#111;
+font-weight:bold;
 }
 
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: white;
-  padding: 12px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
+section{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin:15px 0;
+border-radius:14px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+h2{
+border-left:6px solid #111;
+padding-left:10px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+
+.service{
+background:#fff;
+padding:15px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+cursor:pointer;
+transition:0.2s;
+}
+
+.service:hover{
+transform:scale(1.03);
+}
+
+.selected{
+border:2px solid #00a859;
+}
+
+.btn{
+background:#00a859;
+color:#fff;
+padding:12px 18px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+margin-top:10px;
+}
+
+.btn:hover{
+background:#018a49;
+}
+
+.pay{
+background:#009900;
+}
+
+input,select,textarea{
+width:100%;
+padding:10px;
+margin:8px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+#orderBox{
+background:#fff;
+padding:20px;
+border-radius:14px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+padding:14px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
 }
 </style>
 
@@ -87,120 +148,156 @@ input, textarea {
 <body>
 
 <header>
-  <h1>LBM Investay Holdings</h1>
-  <div class="tagline">Driven by Growth. Built on Trust.</div>
-
-  <a class="btn" href="https://wa.me/27834537779?text=Hi%20I%20need%20a%20service">
-    Request Service
-  </a>
+<h1>LBM Investay Holdings</h1>
+<p>Driven by Growth. Built on Trust.</p>
 </header>
 
-<section>
+<nav>
+<a href="#services">Services</a>
+<a href="#order">Place Order</a>
+<a href="#payments">Payments</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- SERVICES -->
+<section id="services">
 
 <div class="card">
-<h2>💼 Admin & Document Services</h2>
-<ul>
-<li>CV writing</li>
-<li>Typing</li>
-<li>Printing & copying</li>
-<li>Invoices, letters & document formatting</li>
-</ul>
+<h2>💼 Services Overview</h2>
+<p>We offer admin, digital services, WiFi, airtime, electricity, CV typing and bookkeeping solutions.</p>
 </div>
 
-<div class="card">
-<h2>🎓 Application Assistance</h2>
-<ul>
-<li>University application assistance</li>
-<li>NSFAS assistance</li>
-<li>UIF assistance</li>
-<li>SASSA assistance</li>
-<li>CV / job application help</li>
-</ul>
+<div class="grid">
+
+<div class="service" onclick="selectService('WiFi Installation')">🌐 WiFi Installation</div>
+<div class="service" onclick="selectService('Airtime Purchase')">📱 Airtime</div>
+<div class="service" onclick="selectService('Electricity Token')">⚡ Electricity</div>
+<div class="service" onclick="selectService('CV Typing - R20')">📄 CV Typing (R20)</div>
+<div class="service" onclick="selectService('Bookkeeping - R100')">📊 Bookkeeping (R100)</div>
+<div class="service" onclick="selectService('Document Services')">📝 Documents</div>
+
 </div>
 
-<div class="card">
-<h2>💼 Business Support</h2>
-<ul>
-<li>Bookkeeping support</li>
-<li>Invoices and quotations</li>
-<li>Receipts and expense records</li>
-<li>Payment tracking sheets</li>
-<li>Business letters</li>
-</ul>
+</section>
+
+<!-- ORDER SYSTEM -->
+<section id="order">
+
+<div id="orderBox">
+<h2>🧾 Place Your Order</h2>
+
+<p id="selectedText">Selected Service: None</p>
+
+<input id="name" placeholder="Your Name">
+<input id="phone" placeholder="Phone Number">
+<textarea id="notes" placeholder="Extra Notes (optional)"></textarea>
+
+<button class="btn" onclick="saveOrder()">Save Order</button>
+<button class="btn" onclick="downloadOrders()">Download Orders</button>
+
+<p id="msg"></p>
 </div>
 
-<div class="card">
-<h2>📚 Student Administration Support</h2>
-<ul>
-<li>Student registration forms</li>
-<li>Attendance registers</li>
-<li>Student database setup (Excel)</li>
-<li>Reports & timetables</li>
-</ul>
-</div>
+</section>
+
+<!-- PAYMENTS -->
+<section id="payments">
 
 <div class="card">
-<h2>📝 Document Preparation Services</h2>
-<ul>
-<li>Typing & formatting</li>
-<li>Assignments & tests</li>
-<li>Study guides</li>
-<li>PDF ↔ Word conversion</li>
-</ul>
-</div>
+<h2>💳 PayFast Payment</h2>
 
-<div class="card">
-<h2>📢 Marketing & Digital Support</h2>
-<ul>
-<li>Flyers & posters</li>
-<li>Social media posts</li>
-<li>WhatsApp adverts</li>
-</ul>
-</div>
+<form action="https://www.payfast.co.za/eng/process" method="post">
 
-<div class="card">
-<h2>📩 Request Service</h2>
+<input type="hidden" name="merchant_id" value="34842225">
+<input type="hidden" name="merchant_key" value="3tyy5hygmn7yj">
 
-<form onsubmit="sendToWhatsApp(); return false;">
-<input id="name" type="text" placeholder="Your Name" required>
-<input id="service" type="text" placeholder="Service Needed" required>
-<input id="phone" type="text" placeholder="Your Phone Number" required>
-<textarea id="message" placeholder="Message"></textarea>
+<input type="hidden" name="amount" value="50.00">
+<input type="hidden" name="item_name" value="LBM Service Payment">
 
-<button class="btn" type="submit">Send on WhatsApp</button>
+<button class="btn pay">Pay Now</button>
+
 </form>
 </div>
 
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+
 <div class="card">
 <h2>📞 Contact</h2>
-<p>Phone: 083 453 7779</p>
-<p>Email: info@lbminvestay.co.za</p>
+<p>083 453 7779</p>
+<p>info@lbminvestay.co.za</p>
 </div>
 
 </section>
 
 <a class="whatsapp" href="https://wa.me/27834537779">WhatsApp</a>
 
-<footer style="text-align:center; padding:20px; font-size:12px; color:#777;">
-© 2026 LBM Investay Holdings | All Rights Reserved
-</footer>
-
 <script>
-function sendToWhatsApp() {
-  var name = document.getElementById("name").value;
-  var service = document.getElementById("service").value;
-  var phone = document.getElementById("phone").value;
-  var message = document.getElementById("message").value;
 
-  var url = "https://wa.me/27834537779?text="
-  + "Hello LBM,%0A"
-  + "Name: " + name + "%0A"
-  + "Service: " + service + "%0A"
-  + "Phone: " + phone + "%0A"
-  + "Message: " + message;
+let selectedService = "";
 
-  window.open(url, "_blank");
+function selectService(service){
+selectedService = service;
+document.getElementById("selectedText").innerText = "Selected Service: " + service;
+
+// highlight effect (simple)
+let items = document.querySelectorAll(".service");
+items.forEach(i => i.classList.remove("selected"));
+event.target.classList.add("selected");
 }
+
+function saveOrder(){
+
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let notes = document.getElementById("notes").value;
+
+if(selectedService === ""){
+document.getElementById("msg").innerText = "Please select a service first ❌";
+return;
+}
+
+let orders = JSON.parse(localStorage.getItem("lbm_orders") || "[]");
+
+orders.push({
+service:selectedService,
+name:name,
+phone:phone,
+notes:notes,
+date:new Date().toLocaleString()
+});
+
+localStorage.setItem("lbm_orders", JSON.stringify(orders));
+
+document.getElementById("msg").innerText = "Order Saved Successfully ✅";
+}
+
+function downloadOrders(){
+
+let orders = JSON.parse(localStorage.getItem("lbm_orders") || "[]");
+
+if(orders.length === 0){
+alert("No orders yet");
+return;
+}
+
+let csv = "Service,Name,Phone,Notes,Date\n";
+
+orders.forEach(o=>{
+csv += `${o.service},${o.name},${o.phone},${o.notes},${o.date}\n`;
+});
+
+let blob = new Blob([csv], {type:"text/csv"});
+let url = URL.createObjectURL(blob);
+
+let a = document.createElement("a");
+a.href = url;
+a.download = "LBM_Orders.csv";
+a.click();
+}
+
 </script>
 
 </body>
