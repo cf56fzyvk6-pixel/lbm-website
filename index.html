@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>LBM Investay Holdings</title>
+<title>LBM Investay Holdings | Admin, Business & Digital Services</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -12,59 +12,90 @@ margin:0;
 font-family:Arial,sans-serif;
 background:#f4f6f8;
 color:#111;
+line-height:1.6;
 }
 
+/* HEADER */
 header{
+text-align:center;
+padding:70px 20px;
 background:linear-gradient(135deg,#111,#2b2b2b);
 color:#fff;
-text-align:center;
-padding:80px 20px;
 }
 
-header h1{margin:0;font-size:40px;}
-header p{color:#ccc;}
-
-nav{
-position:sticky;
-top:0;
-background:#fff;
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-padding:10px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
+header h1{
+margin:0;
+font-size:40px;
 }
 
-nav a{
-margin:5px 12px;
-text-decoration:none;
-color:#111;
-font-weight:bold;
+.tagline{
+color:#ccc;
+margin-top:10px;
 }
 
+/* SECTIONS */
 section{
-max-width:1100px;
+max-width:1050px;
 margin:auto;
 padding:20px;
 }
 
+/* CARDS */
 .card{
 background:#fff;
-padding:20px;
-margin:15px 0;
+padding:22px;
+margin:16px 0;
 border-radius:14px;
 box-shadow:0 6px 18px rgba(0,0,0,0.08);
+border-left:5px solid #111;
+transition:0.2s ease-in-out;
 }
 
+.card:hover{
+transform:translateY(-3px);
+}
+
+/* HEADINGS */
 h2{
-border-left:6px solid #111;
-padding-left:10px;
+margin-top:0;
+font-size:22px;
 }
 
-h3{
-margin-top:20px;
+/* BUTTON */
+.btn{
+background:#111;
+color:#fff;
+padding:12px 18px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
 }
 
+.btn:hover{
+background:#333;
+}
+
+/* INPUTS */
+input,textarea{
+width:100%;
+padding:10px;
+margin:6px 0;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+/* GRID LABEL STYLE */
+.label{
+display:inline-block;
+padding:4px 10px;
+font-size:12px;
+background:#eee;
+border-radius:20px;
+margin-bottom:10px;
+}
+
+/* WHATSAPP */
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -84,72 +115,114 @@ font-weight:bold;
 
 <header>
 <h1>LBM Investay Holdings</h1>
-<p>Driven by Growth. Built on Trust.</p>
+<div class="tagline">Driven by Growth. Built on Trust.</div>
+
+<a class="btn" href="https://wa.me/27834537779?text=Hi%20I%20need%20a%20service">
+Request Service
+</a>
 </header>
 
-<nav>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
-</nav>
+<section>
 
-<section id="services">
+<!-- SERVICES -->
 
 <div class="card">
+<div class="label">ADMIN SERVICES</div>
 <h2>💼 Admin & Document Services</h2>
 <p>CV writing, Typing, Printing & copying, Invoices, letters & document formatting.</p>
 </div>
 
 <div class="card">
+<div class="label">APPLICATION SUPPORT</div>
 <h2>🎓 Application Assistance</h2>
-<p>University application assistance, NSFAS assistance, UIF assistance, SASSA assistance, CV/job application help.</p>
+<p>University application assistance, NSFAS assistance, UIF assistance, SASSA assistance, CV / job application help.</p>
 </div>
 
 <div class="card">
+<div class="label">BUSINESS SUPPORT</div>
 <h2>📊 Business Support</h2>
-<p>Bookkeeping support, invoices & quotations, receipts & expense records, payment tracking sheets, document filing systems, business letters, basic bookkeeping support.</p>
+<p>Bookkeeping support, invoices and quotations, receipts and expense records, payment tracking sheets, document filing systems, business letters, basic bookkeeping support.</p>
 </div>
 
 <div class="card">
+<div class="label">DOCUMENTATION</div>
 <h2>📝 Document Preparation Services</h2>
 <p>Typing handwritten or digital documents, worksheets formatting, tests and quizzes formatting, assignment formatting and editing, study guides formatting, exam paper formatting, learning material formatting, PDF + Word conversion.</p>
 </div>
 
 <div class="card">
+<div class="label">MARKETING</div>
 <h2>📢 Marketing & Digital Support</h2>
 <p>Flyers and posters, social media posts, WhatsApp adverts, course brochures, registration forms design, print-ready documents.</p>
 </div>
 
 <div class="card">
+<div class="label">STUDENT SUPPORT</div>
 <h2>🎓 College & Student Support</h2>
 <p>CV preparation and formatting, cover letters, assignment formatting, PowerPoint presentations, academic referencing formatting assistance, typing and editing services.</p>
 </div>
 
 <div class="card">
+<div class="label">CONNECTIVITY</div>
 <h2>🌐 LBM WiFi & Data Packages</h2>
 <p>WiFi installation and affordable monthly data packages available.</p>
 </div>
 
 <div class="card">
+<div class="label">VOUCHERS</div>
 <h2>🎟️ Betway & Hollywood Vouchers</h2>
 <p>Betway and Hollywood vouchers available.</p>
 </div>
 
 <div class="card">
+<div class="label">MOBILE SERVICES</div>
 <h2>📱 Airtime & Data</h2>
 <p>Airtime and mobile data available for all networks.</p>
 </div>
 
 <div class="card">
+<div class="label">UTILITIES</div>
 <h2>⚡ Electricity Vouchers</h2>
 <p>Prepaid electricity top-ups available.</p>
 </div>
 
-</section>
-
-<section id="contact">
+<!-- PAYFAST (UNCHANGED - SAFE) -->
 
 <div class="card">
-<h2>📞 Contact Us</h2>
+<h2>💳 PayFast Payment</h2>
+
+<form action="https://www.payfast.co.za/eng/process" method="post">
+<input type="hidden" name="merchant_id" value="34842225">
+<input type="hidden" name="merchant_key" value="3tyy5hygmn7yj">
+<input type="hidden" name="amount" value="50.00">
+<input type="hidden" name="item_name" value="LBM Service Payment">
+
+<button class="btn">Pay Now</button>
+</form>
+
+</div>
+
+<!-- REQUEST FORM (UNCHANGED - SAFE) -->
+
+<div class="card">
+<h2>📩 Request Service</h2>
+
+<form onsubmit="sendToWhatsApp(); return false;">
+
+<input id="name" type="text" placeholder="Your Name" required>
+<input id="service" type="text" placeholder="Service Needed" required>
+<input id="phone" type="text" placeholder="Your Phone Number" required>
+<textarea id="message" placeholder="Message"></textarea>
+
+<button class="btn" type="submit">Send on WhatsApp</button>
+
+</form>
+</div>
+
+<!-- CONTACT -->
+
+<div class="card">
+<h2>📞 Contact</h2>
 <p>Phone: 083 453 7779</p>
 <p>Email: info@lbminvestay.co.za</p>
 </div>
@@ -157,6 +230,25 @@ font-weight:bold;
 </section>
 
 <a class="whatsapp" href="https://wa.me/27834537779">WhatsApp</a>
+
+<script>
+function sendToWhatsApp(){
+
+var name=document.getElementById("name").value;
+var service=document.getElementById("service").value;
+var phone=document.getElementById("phone").value;
+var message=document.getElementById("message").value;
+
+var url="https://wa.me/27834537779?text="
++"Hello LBM%0A"
++"Name: "+name+"%0A"
++"Service: "+service+"%0A"
++"Phone: "+phone+"%0A"
++"Message: "+message;
+
+window.open(url,"_blank");
+}
+</script>
 
 </body>
 </html>
