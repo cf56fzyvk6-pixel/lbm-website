@@ -253,6 +253,11 @@ Request Service
 <p>Email: info@lbminvestay.co.za</p>
 </div>
 
+<!-- FOOTER (ADDED ONLY FIX) -->
+<div style="text-align:center; padding:25px; font-size:14px; color:#666;">
+  © <span id="year"></span> LBM Investay Holdings. All Rights Reserved.
+</div>
+
 </section>
 
 <a class="whatsapp" href="https://wa.me/27834537779">WhatsApp</a>
@@ -292,6 +297,9 @@ var url = "https://wa.me/27834537779?text="
 
 window.open(url,"_blank");
 }
+
+// AUTO YEAR FIX
+document.getElementById("year").textContent = new Date().getFullYear();
 
 </script>
 
