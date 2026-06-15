@@ -186,7 +186,33 @@ Request Service
 <p>Prepaid electricity top-ups available.</p>
 </div>
 
-<!-- PAYFAST (UNCHANGED - SAFE) -->
+<!-- SELECTABLE SERVICES (ADDED) -->
+
+<div class="card">
+<div class="label">SELECT SERVICES</div>
+
+<h2>🧾 Click & Select Services</h2>
+
+<div>
+<button class="btn" type="button" onclick="toggleService('CV Writing')">CV Writing</button>
+<button class="btn" type="button" onclick="toggleService('Typing')">Typing</button>
+<button class="btn" type="button" onclick="toggleService('Printing & Copying')">Printing & Copying</button>
+<button class="btn" type="button" onclick="toggleService('NSFAS Assistance')">NSFAS Assistance</button>
+<button class="btn" type="button" onclick="toggleService('University Applications')">University Applications</button>
+<button class="btn" type="button" onclick="toggleService('WiFi Installation')">WiFi Installation</button>
+<button class="btn" type="button" onclick="toggleService('Airtime')">Airtime</button>
+<button class="btn" type="button" onclick="toggleService('Electricity')">Electricity</button>
+<button class="btn" type="button" onclick="toggleService('Bookkeeping')">Bookkeeping</button>
+<button class="btn" type="button" onclick="toggleService('Document Formatting')">Document Formatting</button>
+<button class="btn" type="button" onclick="toggleService('Betway Voucher')">Betway Voucher</button>
+<button class="btn" type="button" onclick="toggleService('Hollywood Voucher')">Hollywood Voucher</button>
+</div>
+
+<p><b>Selected:</b> <span id="selectedList">None</span></p>
+
+</div>
+
+<!-- PAYFAST -->
 
 <div class="card">
 <h2>💳 PayFast Payment</h2>
@@ -202,7 +228,7 @@ Request Service
 
 </div>
 
-<!-- REQUEST FORM (UNCHANGED - SAFE) -->
+<!-- REQUEST FORM -->
 
 <div class="card">
 <h2>📩 Request Service</h2>
@@ -210,13 +236,14 @@ Request Service
 <form onsubmit="sendToWhatsApp(); return false;">
 
 <input id="name" type="text" placeholder="Your Name" required>
-<input id="service" type="text" placeholder="Service Needed" required>
+<input id="service" type="text" placeholder="Service Needed (optional)" >
 <input id="phone" type="text" placeholder="Your Phone Number" required>
 <textarea id="message" placeholder="Message"></textarea>
 
 <button class="btn" type="submit">Send on WhatsApp</button>
 
 </form>
+
 </div>
 
 <!-- CONTACT -->
@@ -232,6 +259,23 @@ Request Service
 <a class="whatsapp" href="https://wa.me/27834537779">WhatsApp</a>
 
 <script>
+
+let selectedServices = [];
+
+function toggleService(service){
+
+let index = selectedServices.indexOf(service);
+
+if(index === -1){
+selectedServices.push(service);
+} else {
+selectedServices.splice(index,1);
+}
+
+document.getElementById("selectedList").innerText =
+selectedServices.length ? selectedServices.join(", ") : "None";
+}
+
 function sendToWhatsApp(){
 
 var name=document.getElementById("name").value;
@@ -239,15 +283,18 @@ var service=document.getElementById("service").value;
 var phone=document.getElementById("phone").value;
 var message=document.getElementById("message").value;
 
+var selected = selectedServices.join(", ");
+
 var url="https://wa.me/27834537779?text="
 +"Hello LBM%0A"
 +"Name: "+name+"%0A"
-+"Service: "+service+"%0A"
 +"Phone: "+phone+"%0A"
++"Selected Services: "+selected+"%0A"
 +"Message: "+message;
 
 window.open(url,"_blank");
 }
+
 </script>
 
 </body>
