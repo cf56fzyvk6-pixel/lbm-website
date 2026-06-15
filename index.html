@@ -85,7 +85,7 @@ border-radius:8px;
 border:1px solid #ccc;
 }
 
-/* GRID LABEL STYLE */
+/* LABEL */
 .label{
 display:inline-block;
 padding:4px 10px;
@@ -95,7 +95,7 @@ border-radius:20px;
 margin-bottom:10px;
 }
 
-/* WHATSAPP */
+/* WHATSAPP BUTTON */
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -141,7 +141,7 @@ Request Service
 <div class="card">
 <div class="label">BUSINESS SUPPORT</div>
 <h2>📊 Business Support</h2>
-<p>Bookkeeping support, invoices and quotations, receipts and expense records, payment tracking sheets, document filing systems, business letters, basic bookkeeping support.</p>
+<p>Bookkeeping support, invoices and quotations, receipts and expense records, payment tracking sheets, document filing systems, business letters.</p>
 </div>
 
 <div class="card">
@@ -153,19 +153,19 @@ Request Service
 <div class="card">
 <div class="label">MARKETING</div>
 <h2>📢 Marketing & Digital Support</h2>
-<p>Flyers and posters, social media posts, WhatsApp adverts, course brochures, registration forms design, print-ready documents.</p>
+<p>Flyers, posters, social media posts, WhatsApp adverts, course brochures, registration forms design.</p>
 </div>
 
 <div class="card">
 <div class="label">STUDENT SUPPORT</div>
 <h2>🎓 College & Student Support</h2>
-<p>CV preparation and formatting, cover letters, assignment formatting, PowerPoint presentations, academic referencing formatting assistance, typing and editing services.</p>
+<p>CV preparation, cover letters, assignments, PowerPoint presentations, academic referencing, typing & editing.</p>
 </div>
 
 <div class="card">
 <div class="label">CONNECTIVITY</div>
 <h2>🌐 LBM WiFi & Data Packages</h2>
-<p>WiFi installation and affordable monthly data packages available.</p>
+<p>WiFi installation and monthly data packages.</p>
 </div>
 
 <div class="card">
@@ -177,7 +177,7 @@ Request Service
 <div class="card">
 <div class="label">MOBILE SERVICES</div>
 <h2>📱 Airtime & Data</h2>
-<p>Airtime and mobile data available for all networks.</p>
+<p>Airtime and mobile data for all networks.</p>
 </div>
 
 <div class="card">
@@ -186,7 +186,7 @@ Request Service
 <p>Prepaid electricity top-ups available.</p>
 </div>
 
-<!-- SELECTABLE SERVICES (ADDED) -->
+<!-- SELECTABLE SERVICES -->
 
 <div class="card">
 <div class="label">SELECT SERVICES</div>
@@ -236,7 +236,6 @@ Request Service
 <form onsubmit="sendToWhatsApp(); return false;">
 
 <input id="name" type="text" placeholder="Your Name" required>
-<input id="service" type="text" placeholder="Service Needed (optional)" >
 <input id="phone" type="text" placeholder="Your Phone Number" required>
 <textarea id="message" placeholder="Message"></textarea>
 
@@ -278,14 +277,13 @@ selectedServices.length ? selectedServices.join(", ") : "None";
 
 function sendToWhatsApp(){
 
-var name=document.getElementById("name").value;
-var service=document.getElementById("service").value;
-var phone=document.getElementById("phone").value;
-var message=document.getElementById("message").value;
+var name = document.getElementById("name").value;
+var phone = document.getElementById("phone").value;
+var message = document.getElementById("message").value;
 
 var selected = selectedServices.join(", ");
 
-var url="https://wa.me/27834537779?text="
+var url = "https://wa.me/27834537779?text="
 +"Hello LBM%0A"
 +"Name: "+name+"%0A"
 +"Phone: "+phone+"%0A"
